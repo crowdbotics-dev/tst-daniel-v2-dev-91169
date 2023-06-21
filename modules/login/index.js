@@ -17,7 +17,7 @@ const PasswordReset = () => {
 const Stack = createStackNavigator();
 
 const Login = () => {
-  return <Stack.Navigator headerMode="none">
+  return <Stack.Navigator initialRouteName="LoginScreen" headerMode="none">
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
       <Stack.Screen name="PasswordReset" component={PasswordReset} />
     </Stack.Navigator>;
@@ -26,7 +26,7 @@ const Login = () => {
 const styles = StyleSheet.create({
   text: {
     color: "black",
-    fontSize: 14,
+    fontSize: 18,
     padding: 20,
     margin: 10
   }
