@@ -10,7 +10,7 @@ const LoginScreen = () => {
 
 const PasswordReset = () => {
   return <View>
-      <Text>Password Reset</Text>
+      <Text style={styles.text}>Password Reset</Text>
     </View>;
 };
 
