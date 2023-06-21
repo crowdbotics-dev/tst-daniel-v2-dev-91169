@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const LoginScreen = () => {
   return <View>
-      <Text>Login Screen</Text>
+      <Text style={styles.text}>Login Screen</Text>
     </View>;
 };
 
@@ -23,6 +23,14 @@ const Login = () => {
     </Stack.Navigator>;
 };
 
+const styles = StyleSheet.create({
+  text: {
+    color: "black",
+    fontSize: 14,
+    padding: 20,
+    margin: 10
+  }
+});
 export default {
   title: "Login",
   navigator: Login
